@@ -1,0 +1,36 @@
+# Node
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+
+# Env files
+.env
+.env.*
+
+# Prisma
+**/prisma/dev.db
+**/prisma/dev.db-journal
+
+# Logs
+logs/
+*.log
+
+# Build
+dist/
+build/
+out/
+
+# TypeScript
+*.tsbuildinfo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.sw?
+
+# Others
+coverage/
