@@ -8,7 +8,7 @@ Built with **Node.js**, **TypeScript**, **PostgreSQL**, and **Kafka**, it follow
 ---
 
 ## 📦 Monorepo Structure
-
+```
 teleport/  
 ├── package.json                 # Root workspace config  
 ├── pnpm-workspace.yaml          # Monorepo package grouping  
@@ -21,8 +21,9 @@ teleport/
 │   └── ...                      # More microservices  
 ├── packages/  
 │   └── common/                  # Shared utils, middlewares, etc.  
+│   └── ...
 └── docker-compose.yml           # For PostgreSQL, Kafka (to be added)
-
+```
 ---
 
 ## 🚀 Features (Planned)
@@ -37,7 +38,7 @@ teleport/
 
 ## 🧰 Tech Stack
 
-- **Language:** TypeScript (ES2020+)
+- **Language:** TypeScript
 - **Runtime:** Node.js
 - **Package Manager:** pnpm (Monorepo support)
 - **Database:** PostgreSQL
