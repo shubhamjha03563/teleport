@@ -1,37 +1,49 @@
 {
-	"name": "teleport",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"workspaces": [
-		"services/*",
-		"packages/*"
-	],
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "pnpm --filter auth-service dev",
-		"prisma:generate:auth": "pnpm --filter auth-service exec prisma generate",
-		"prisma:generate:all": "pnpm -r --filter \"./**\" exec -- prisma generate"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"packageManager": "pnpm@10.13.1",
-	"dependencies": {
-		"@prisma/client": "5.22.0",
-		"bcryptjs": "^3.0.2",
-		"cors": "^2.8.5",
-		"dotenv": "^17.2.0",
-		"express": "^5.1.0",
-		"jsonwebtoken": "^9.0.2",
-		"kafkajs": "^2.2.4",
-		"prisma": "5.22.0",
-		"zod": "^4.0.5"
-	},
-	"devDependencies": {
-		"@types/express": "^5.0.3",
-		"@types/node": "^24.0.15",
-		"ts-node-dev": "^2.0.0",
-		"typescript": "^5.8.3"
-	}
+  "name": "teleport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "workspaces": [
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm --filter auth-service dev",
+    "prisma:generate:auth": "pnpm --filter auth-service exec prisma generate",
+    "prisma:generate:all": "pnpm -r --filter \"./**\" exec -- prisma generate",
+    "prepare": "husky install",
+    "format": "prettier --write . --ignore-path .gitignore",
+    "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "@prisma/client": "5.22.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "kafkajs": "^2.2.4",
+    "prisma": "5.22.0",
+    "zod": "^4.0.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.15",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^8.0.0",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
 }

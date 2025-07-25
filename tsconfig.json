@@ -1,19 +1,16 @@
 {
   "compilerOptions": {
     "target": "ES2021",
-    "module": "CommonJS",
-    "lib": [
-      "ES2021"
-    ],
+    "module": "ESNext", // ← ✅ change this
+    "moduleResolution": "Bundler", // ← ✅ ESM-style module resolution
+    "lib": ["ES2021"],
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@teleport/common": [
-        "packages/common/src"
-      ]
+      "@teleport/common": ["packages/common/src"]
     },
     "composite": true
   },
@@ -25,7 +22,5 @@
       "path": "services/auth-service"
     }
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

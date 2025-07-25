@@ -8,22 +8,24 @@ Built with **Node.js**, **TypeScript**, **PostgreSQL**, and **Kafka**, it follow
 ---
 
 ## 📦 Monorepo Structure
+
 ```
-teleport/  
-├── package.json                 # Root workspace config  
-├── pnpm-workspace.yaml          # Monorepo package grouping  
-├── tsconfig.json                # Root TypeScript config  
-├── .gitignore  
-├── node_modules/                # Centralized for all packages  
-├── services/  
-│   ├── auth-service/  
-│   ├── user-service/  
-│   └── ...                      # More microservices  
-├── packages/  
-│   └── common/                  # Shared utils, middlewares, etc.  
+teleport/
+├── package.json                 # Root workspace config
+├── pnpm-workspace.yaml          # Monorepo package grouping
+├── tsconfig.json                # Root TypeScript config
+├── .gitignore
+├── node_modules/                # Centralized for all packages
+├── services/
+│   ├── auth-service/
+│   ├── user-service/
+│   └── ...                      # More microservices
+├── packages/
+│   └── common/                  # Shared utils, middlewares, etc.
 │   └── ...
 └── docker-compose.yml           # For PostgreSQL, Kafka (to be added)
 ```
+
 ---
 
 ## 🚀 Features (Planned)
@@ -58,3 +60,4 @@ pnpm install
 # Run Auth Service
 pnpm --filter auth-service dev
 
+```
