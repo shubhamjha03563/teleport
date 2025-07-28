@@ -11,7 +11,7 @@ module.exports = [
       parser: tseslint.parser,
       parserOptions: {
         project: "./tsconfig.json",
-        sourceType: "module", // ✅ ensures ESM import/export is parsed correctly
+        sourceType: "module", // ensures ESM import/export is parsed correctly
         ecmaVersion: "latest",
       },
     },
